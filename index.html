@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Codigo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <section class="caja">
+                <img src="img/logoVector.png" alt="alura, programacion" class="caja__logo">
+            </section>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor-input">
+            <section class="form">
+                <textarea name="texto" id="texto" cols="30" rows="15" class="form__text"
+                    placeholder="Ingrese el texto aquí"></textarea>
+
+                <p class="form__info"><i class="fa fa-info-circle" aria-hidden="true"></i>Solo letras minúsculas y sin
+                    acentos</p>
+
+                <button type="button" id="btn-encriptar" class="form__boton-encriptar">Encriptar</button>
+                <button type="button" id="btn-desencriptar" class="form__boton-desencriptar">Desencriptar</button>
+            </section>
+            <aside class="contenedor-output">
+                <img src="img/Muñeco.png" alt="munheco" class="panel__muneco" id="panel-munheco">
+                <h3 class="panel__leyenda" id="panel-leyenda">Ningún mensaje fue <br>encontrado</h3>
+                <textarea name="cifrado" id="cifrado" cols="30" rows="8" class="panel__texto-cifrado"></textarea>
+                <button type="button" class="panel__boton-copiar" onclick="copiarTexto();">Copiar texto</button>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <p>Copyright &copy; 2022 - Matias Fernando Arias Caballero.</p>
+        </div>
+    </footer>
+    <script src="log.js" type="text/javascript"></script>
+</body>
+
+</html>
